@@ -19,17 +19,23 @@ En enhetlig namnstruktur underlättar felsökning och samordning. En gemensam ko
 ## Namnstruktur
 
 ```
-[SE]-[IATA|KOMMUN]-[BESKRIVNING]-[PKID]
+[SE]-[KOMMUN]-[BESKRIVNING]
+
+ELLER
+
+[SE][LÄNKOMMUNKOD]-[BESKRIVNING]
 ```
 
 Alla fält obligatoriska. Versaler genomgående, förutom i beskrivning. Inga svenska tecken. Bindestreck (`-`) som enda avskiljare. Max 22 tecken totalt (inkl. bindestreck).
 
+
 ## Exempel
 
 ```
-SE-HAD-MrBengtCOM-AB12
-SE-BST-KattvkRep1-EF34
-SE-LAH-HallonGrg1-BF12
+SE1380-MrBengtCOMAB12
+SE1380-Arnegatan2REP
+SE-BST-KattvkRep1
+SE-LAH-HallonGrg1BF12
 ```
 
 ---
@@ -39,9 +45,9 @@ SE-LAH-HallonGrg1-BF12
 | **Fält** | **Längd** | **Beskrivning** |
 |---|---|---|
 | **[SE]** | 2 (fast) | Landskod enligt ISO 3166-1 alpha-2. Skall vara SE för noder i Sverige |
-| **[IATA\|KOMMUN]** | 3 (fast) | IATA-kod för närmaste flygplats (Meshmapper-område), t.ex. `ARN`, `GOT` — eller förkortning för kommun som ej sammanfaller med svensk IATA-kod, t.ex. `BST`, `MAL`. Båda tre bokstäver. Se appendix för rekommenderade förkortningar för kommun. |
-| **[BESKRIVNING]** | max 10 | Placering, ägare eller adress. Se nodtyper nedan. Rekommenderas inledande versal och sedan gemener. Se nodtyper nedan. |
-| **[PKID]** | 4 (fast) | Fyra första tecknen i nodens publika nyckel, t.ex. `A3FB` |
+| **[KOMMUN]** | 3 (fast) | Förkortning för kommun, t.ex. `BST`, `MAL`. Båda tre bokstäver. Se appendix för rekommenderade förkortningar för kommun. |
+| **[LÄNKOMMUNKOD]** |4 (fast) | Län och kommun-koder, e.g. 1380 = Halmstad Kommun i Hallands län
+| **[BESKRIVNING]** | max 15 | Placering, ägare eller adress. Se nodtyper nedan. Rekommenderas inledande versal och sedan gemener. Se nodtyper nedan. I slutet av Beskrivning kan de fyra första tecknen i nodens publika nyckel läggas till, t.ex. `A3FB`
 
 ## Rekommendationer per nodtyp
 
@@ -53,6 +59,7 @@ SE-LAH-HallonGrg1-BF12
 
 ---
 
-*Kommunkoder: Se Appendix. IATA-koder: Se Appendix samt Meshmapper.*
+*Kommunförkortningar: Se Appendix. *
+*Län och Kommunkoder: https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/lan-och-kommuner-i-kodnummerordning/ *
 
 
