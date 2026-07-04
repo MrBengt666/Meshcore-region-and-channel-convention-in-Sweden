@@ -48,7 +48,7 @@ Meshcore kanalerna följer definitioner av regioner.
 Syftet med kanalnamnet är att minska risken för sammanblandning (dvs. skriva in fel kanal) och vara helttydlig med vilket scope (region) som avses. Namnet på resp kanalen är därför rakt av baserat på läns och kommunkod, dvs. speglar region-namnet. 
 
 | **Exempel: SE-Meshcore region** | **Kanal** | **[BESKRIVNING]** |
-|---|---|
+|---|---|---|
 | se13 | **\#se13** | Hallands län |
 | se1380 | **\#se1380** | Halmstad kommun |
 | se14 | **\#se14** | Västra Götalands län |
