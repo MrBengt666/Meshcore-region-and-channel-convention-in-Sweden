@@ -3,7 +3,7 @@ title: "Project Documentation"
 date: "$BUILD_DATE$"
 ---
 
-Rekommendationer för regioner och kanaler för Meshcore-näti Sverige
+Rekommendationer för regioner och kanaler för Meshcore-nät i Sverige
 ===
 
 frav\_se\*, PappaNiklas\*, haxdoggy\*, DanielPaulsson\*, Burt Persson — \
@@ -12,22 +12,40 @@ frav\_se\*, PappaNiklas\*, haxdoggy\*, DanielPaulsson\*, Burt Persson — \
 Kontakt: Discord SWEDEN-MESH #halland
 https://discord.com/channels/1359596001240944660/1467977832557973635
 
-Syftet med dokumentedtär att ge en rekommendation för hur bas-regioner och bas-kanaler skall organiseras i Sverige. Dess benämns som "bas" då dessa rekommenderas som bas, men att andra regioner och kanaler kan fritt definieras utöver "basen". Definitionen av bas-regioner ger sen bas-kanaler, dvs. definitionen av bas-kanaler bygger på definitionen av bas-regioner. I resten av dokumentet avses alltid "bas-" när region och kanal nämns.  
-En enhetlig region och kanaltruktur underlättar kommunikaion felsökning och samordning. En gemensam konvention gör det möjligt att direkt från nodnamnet utläsa område, kommun och placering utan att konsultera extern dokumentation. **OBS! Detta är rekommendationer!**
+Syftet med dokumentet är att ge en rekommendation för hur 1) bas-regioner och 2) bas-kanaler skall organiseras i Sverige. Dess benämns som "bas" då dessa rekommenderas som bas, men att andra regioner och kanaler kan fritt definieras utöver "basen". Definitionen av bas-regioner ger sen bas-kanaler, dvs. definitionen av bas-kanaler bygger på definitionen av bas-regioner. **I resten av dokumentet avses alltid "bas-" när region och kanal nämns.**
+
+Rekommendationen kan läsas som två separata förslag: 1) bas-regioner, och; 2) bas-kanaler. Etablerande av 1) bas-regioner är viktigare än 2) bas-kanaler. 
+
+En enhetlig region och kanaltruktur underlättar kommunikaion, felsökning och samordning. En gemensam konvention gör det möjligt att direkt från region och kanal  utläsa område, kommun och placering utan att konsultera extern dokumentation. **OBS! Detta är rekommendationer!**
 
 ---
 
-## Namnstruktur
+## Regioner i Svenska Meshcore 
 
-```
-[SE]-[KOMMUN]-[BESKRIVNING]
+Meshcore regionerna följer SCBs Län och Kommunkoder, se referens 1, med prefix se. 
+*Län har [se][xx]
+*Kommuner har [se][xx][yy], dvx. kommun yy i län xx. 
 
-ELLER
+| **Exempel: SE-Meshcore region** | **[BESKRIVNING]** |
+|---|---|
+| **se13** | Hallands län |
+| **se1380** | Halmstad kommun |
+| **se14** | Västra Götalands län |
+| **se1480** | Göteborg kommun |
+| **se1481** | Mölndal kommun |
 
-[SE][LÄNKOMMUNKOD]-[BESKRIVNING]
-```
+När regioner läggs in i repeatern (med CLI) måste hierarki beaktas, e.g.
+region put se *
+region put se14 se 
+region put se1480 se14
 
-Alla fält obligatoriska. Versaler genomgående, förutom i beskrivning. Inga svenska tecken. Bindestreck (`-`) som enda avskiljare. Max 22 tecken totalt (inkl. bindestreck).
+En fullständig lista på regioner finns i appendix
+
+
+## Kanaler i Svenska Meshcore 
+
+Meshcore kanalerna följer definitioner av regioner. 
+
 
 
 ## Exempel
@@ -60,7 +78,6 @@ SE-LAH-HallonGrg1BF12
 
 ---
 
-*Kommunförkortningar: Se Appendix. *
-*Län och Kommunkoder: https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/lan-och-kommuner-i-kodnummerordning/ *
+*1: Län och Kommunkoder: https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/lan-och-kommuner-i-kodnummerordning/ *
 
 
