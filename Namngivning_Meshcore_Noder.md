@@ -3,7 +3,7 @@ title: "Project Documentation"
 date: "$BUILD_DATE$"
 ---
 
-Rekommendationer för namngivning av noder i Meshcore-nät
+Rekommendationer för regioner och kanaler för Meshcore-näti Sverige
 ===
 
 frav\_se\*, PappaNiklas\*, haxdoggy\*, DanielPaulsson\*, Burt Persson — \
@@ -12,7 +12,8 @@ frav\_se\*, PappaNiklas\*, haxdoggy\*, DanielPaulsson\*, Burt Persson — \
 Kontakt: Discord SWEDEN-MESH #halland
 https://discord.com/channels/1359596001240944660/1467977832557973635
 
-En enhetlig namnstruktur underlättar felsökning och samordning. En gemensam konvention gör det möjligt att direkt från nodnamnet utläsa område, kommun och placering utan att konsultera extern dokumentation. **OBS! Detta är rekommendationer!**
+Syftet med dokumentedtär att ge en rekommendation för hur bas-regioner och bas-kanaler skall organiseras i Sverige. Dess benämns som "bas" då dessa rekommenderas som bas, men att andra regioner och kanaler kan fritt definieras utöver "basen". Definitionen av bas-regioner ger sen bas-kanaler, dvs. definitionen av bas-kanaler bygger på definitionen av bas-regioner. I resten av dokumentet avses alltid "bas-" när region och kanal nämns.  
+En enhetlig region och kanaltruktur underlättar kommunikaion felsökning och samordning. En gemensam konvention gör det möjligt att direkt från nodnamnet utläsa område, kommun och placering utan att konsultera extern dokumentation. **OBS! Detta är rekommendationer!**
 
 ---
 
