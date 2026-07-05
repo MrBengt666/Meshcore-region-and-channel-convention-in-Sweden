@@ -26,7 +26,7 @@ Meshcore regionerna följer SCBs Län och Kommunkoder, se referens 1, med prefix
 *Län har [se][xx]
 *Kommuner har [se][xx][yy], dvx. kommun yy i län xx. 
 
-| **Exempel: SE-Meshcore region** | **Beskrivning** |
+| **SE-Meshcore Bas-region** | **Beskrivning** |
 |---|---|
 | **se13** | Hallands län |
 | **se1380** | Halmstad kommun |
@@ -48,7 +48,7 @@ Detta beskrivs även likvärdigt på https://meshat.se/meshcore/regioner/
 Meshcore kanalerna följer definitionerna av regioner. Syftet med en bas-kanal är att definiera basala räckvidds-bestämda kända publik kommunikation kanaler. 
 Motivationen för  valt kanalnamnet är att minska risken för sammanblandning (dvs. skriva in fel kanal) och vara helttydlig med vilket scope (region) som avses. Namnet på resp kanalen är därför rakt av baserat på läns och kommunkod, dvs. speglar region-namnet. 
 
-| **Exempel: SE-Meshcore region** | **Kanal** | **Beskrivning** |
+| **SE-Meshcore Bas-region** | **SE-Meshcore Bas-Kanal** | **Beskrivning** |
 |---|---|---|
 | se13 | **\#se13** | Hallands län |
 | se1380 | **\#se1380** | Halmstad kommun |
