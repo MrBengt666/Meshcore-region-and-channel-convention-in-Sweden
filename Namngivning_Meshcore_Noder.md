@@ -40,7 +40,7 @@ region put se *
 region put se14 se 
 region put se1480 se14
 
-En fullständig lista på regioner finns i appendix
+En fullständig lista på regioner finns i appendix.
 Detta beskrivs även likvärdigt på https://meshat.se/meshcore/regioner/
 
 ## Bas-Kanaler i Svenska Meshcore 
@@ -56,6 +56,8 @@ Motivationen för  valt kanalnamnet är att minska risken för sammanblandning (
 | se14 | **\#se14** | Västra Götalands län |
 | se1480 | **\#se1480** | Göteborg kommun |
 | se1481 | **\#se1481** | Mölndal kommun |
+
+En fullständig lista på kanaler och dess regioner finns i appendix.
 
 ---
 
