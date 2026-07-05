@@ -1,6 +1,6 @@
 # Meshcore region and channel convention in Sweden
 Recommended regions and channels for using Meshcore in Sweden
-Rekommenderade regions och kanaler vidanvändning av Meshcore i Sverige
+Rekommenderade regions och kanaler vid användning av Meshcore i Sverige
 
 Konventionen består av ett huvuddokument samt ett appendix med rekommendarade förkortningar. 
 Den senaste release som pdf finns under "Releases"!
